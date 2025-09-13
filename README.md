@@ -1,6 +1,6 @@
 # Bitmask Calculator - NVIDIA Values
 
-This was meant to be a normal bitmask calculator, but I decided to add features to it that made it possible to directly configure and apply NVIDIA values. And as most of you probably didn't understand anything of <#1349023856001548338> yet, the tool will make it easy for you. You may have seen people sharing NVIDIA values with weird looking data, example:
+This was meant to be a normal bitmask calculator, but I decided to add features to it that made it possible to directly configure and apply NVIDIA values. And as most of you probably didn't understand anything of [resman](https://discord.com/channels/836870260715028511/1349023856001548338) yet, the tool will make it easy for you. You may have seen people sharing NVIDIA values with weird looking data, example:
 ```bat
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0001" /v RMElcg /t REG_DWORD /d 1431655765 /f
 ```
