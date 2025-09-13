@@ -15,17 +15,14 @@ The lower right panel shows the `.json` code of the selected value, I used the `
 > [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
 
 ## GUI Buttons
-`Reg Add` - Adds the currently selected value to the key
-
-`Reg Del` - Removes the currently selected value from the key
-
-`Disable All` - Enables all `Disable` bits
-
-`Enable All` - Enables all `Enable` bits
-
-`Open Key` - Opens the `HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}` key which includes a value named `DriverDesc` with a data of `*NVIDIA*`
-
-`Clear` - Reverts bit states to their default
+| Button      | Description                                                                                                                |
+|-------------|----------------------------------------------------------------------------------------------------------------------------|
+| `Reg Add`     | Adds the currently selected value to the key                                                                             |
+| `Reg Del`     | Removes the currently selected value from the key                                                                        |
+| `Disable All` | Enables all `Disable` bits                                                                                                |
+| `Enable All`  | Enables all `Enable` bits                                                                                                 |
+| `Open Key`    | Opens the registry key:<br>`HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}`<br>Includes a value named `DriverDesc` with data of `*NVIDIA*` |
+| `Clear`       | Reverts bit states to their default                                                                                      |
 
 ## Bitmask Calculation
 
@@ -139,9 +136,9 @@ Test yourself with the following example:
 Try to disable all of them.
 
 Solution:
-Dec: `88080384`
-Hex: `0x05400000`
-Bin: `00000101010000000000000000000000`
+Dec: `88080384`  
+Hex: `0x05400000`  
+Bin: `00000101010000000000000000000000`  
 
 ```ps
 0x00000001 -shl 22
