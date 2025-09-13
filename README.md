@@ -11,6 +11,10 @@ Preview:
 The tool currently has a selection of `967` values ([`nvvalues.txt`](https://github.com/5Noxi/NVIDIA-Bitmask-Calc/blob/main/nvvalues.txt)). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
 > [WPR NVIDIA-00XX Record](https://github.com/5Noxi/NVIDIA-Bitmask-Calc/blob/main/NVIDIA-00XX.txt)
 
+The lower right panel shows the `.json` code of the selected value, I used the `Min Dark` theme as template for colors:
+> [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
+
+## GUI Buttons
 `Reg Add` - Adds the currently selected value to the key
 
 `Reg Del` - Removes the currently selected value from the key
@@ -22,9 +26,6 @@ The tool currently has a selection of `967` values ([`nvvalues.txt`](https://git
 `Open Key` - Opens the `HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}` key which includes a value named `DriverDesc` with a data of `*NVIDIA*`
 
 `Clear` - Reverts bit states to their default
-
-The lower right panel shows the `C Header (.h)` code of the selected value, I used the `Min Dark` theme as template for colors:
-> [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
 
 ## Bitmask Calculation
 
