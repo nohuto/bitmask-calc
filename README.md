@@ -85,7 +85,6 @@ would result in `1`, `4`, `16`, `64`
 ```
 Output of `85`, which is the result.
 
-⠀
 Different common scenario would be `DisableDynamicPstate`:
 ```json
 "Name":  "DisableDynamicPstate",
