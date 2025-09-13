@@ -24,7 +24,7 @@ The tool currently has a selection of `967` values (`nvvalues.txt`). It works wi
 `Clear` - Reverts bit states to their default
 
 The lower right panel shows the `C Header (.h)` code of the selected value, I used the `Min Dark` theme as template for colors:
-> https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json
+> [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
 
 ## Bitmask Calculation
 
