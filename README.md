@@ -8,7 +8,7 @@ Ever wondered what the data of `1431655765` does? The tool let's you load bitfie
 
 Preview:
 
-The tool currently has a selection of `967` values (`nvvalues.txt`). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
+The tool currently has a selection of `967` values ([`nvvalues.txt`](https://github.com/5Noxi/NVIDIA-Bitmask-Calc/blob/main/nvvalues.txt)). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
 > https://discord.com/channels/836870260715028511/1375059420970487838/1375059865667633275
 
 `Reg Add` - Adds the currently selected value to the key
