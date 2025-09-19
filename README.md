@@ -17,6 +17,8 @@ It adds all values to the [`Display`](https://learn.microsoft.com/en-us/windows-
 
 Preview:
 
+https://github.com/user-attachments/assets/91b241ef-5e8e-4859-8957-d3b54dc52b0e
+
 The tool currently has a selection of `967` values ([`nvvalues.txt`](https://github.com/5Noxi/bitmask-calc/blob/main/nvvalues.txt)). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
 > [NVIDIA Display Class GUID Record](https://github.com/5Noxi/wpr-reg-records/blob/main/NVIDIA-DispGUID.txt)
 
