@@ -34,7 +34,7 @@ The lower right panel shows the `.json` code of the selected value, I used the `
 | `Enable All`  | Enables all `ENABLE*` / `ON` / `TRUE` bits (fallback to `DEFAULT`)                                                       |
 | `Open Key`    | Opens the registry key within the display class GUID [`4d36e968-e325-11ce-bfc1-08002be10318`](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors#device-categories-and-class-values)<br> which includes a value named `DriverDesc` with data of `*NVIDIA*` |
 | `Auto Config` | Sets preconfigured **experimental** values, these aren't recommendations, only possible presumptions (grayed out, if there's no `Configured` value in the `.json` config)
-| `Clear`       | Reverts bit states to `*DEFAULT*` (first fallback to `EMPTY (0)`, second to any `0` value                                                                                      |
+| `Clear`       | Reverts bit states to `*DEFAULT*` (first fallback to `EMPTY (0)`, second to any `0` value)                                                                                      |
 
 ## Bitmask Calculation
 
