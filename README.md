@@ -1,28 +1,35 @@
 # Bitmask Calculator - NVIDIA Values
 
-This was meant to be a normal bitmask calculator, but I decided to add features to it that made it possible to directly configure and apply NVIDIA values. And as most of you probably didn't understand anything of [resman](https://discord.com/channels/836870260715028511/1349023856001548338) yet, the tool will make it easy for you. You may have seen people sharing NVIDIA values with weird looking data, example:
+This was meant to be a normal bitmask calculator, but I decided to add features to it that made it possible to directly configure and apply NVIDIA values. You may have seen people sharing NVIDIA values with uncommon looking data, example:
 ```bat
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0001" /v RMElcg /t REG_DWORD /d 1431655765 /f
 ```
-Ever wondered what the data of `1431655765` does? The tool let's you load bitfield definitions or constant options, shows all options and let's you choose them via a dropdown menu. After selecting a option, it updates the `dec`, `hex`, `bin` data and displays the bit positions. If you want to use the value, you can add it with the `Reg Add` button, which searches for the correct key.
+The tool loads all value names including their bit definitions, making it easy for you to understand what the data of `1431655765` truely does. After selecting an option, it updates the `dec`, `hex`, `bin` data and displays the bit positions. If you want to use the value, you can add it with the `Reg Add` button, which searches for the correct key.
+
+> [!NOTE]
+> The calculator uses an converted `.json` version of the official NVIDIA resource manager definitions. I've built the converter myself, and it should be `100%` accurate. However, if you notice any obvious errors, please report them.
 
 Preview:
 
-The tool currently has a selection of `967` values ([`nvvalues.txt`](https://github.com/5Noxi/NVIDIA-Bitmask-Calc/blob/main/nvvalues.txt)). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
-> [WPR NVIDIA-00XX Record](https://github.com/5Noxi/NVIDIA-Bitmask-Calc/blob/main/NVIDIA-00XX.txt)
+The tool currently has a selection of `967` values ([`nvvalues.txt`](https://github.com/5Noxi/bitmask-calc/blob/main/nvvalues.txt)). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
+> [NVIDIA Display Class GUID Record](https://github.com/5Noxi/wpr-reg-records/blob/main/NVIDIA-DispGUID.txt)
 
 The lower right panel shows the `.json` code of the selected value, I used the `Min Dark` theme as template for colors:
 > [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
 
 ## GUI Buttons
-| Button      | Description                                                                                                                |
-|-------------|----------------------------------------------------------------------------------------------------------------------------|
+| Button        | Description                                                                                                                |
+|---------------|----------------------------------------------------------------------------------------------------------------------------|
 | `Reg Add`     | Adds the currently selected value to the key                                                                             |
 | `Reg Del`     | Removes the currently selected value from the key                                                                        |
-| `Disable All` | Enables all `Disable` bits                                                                                                |
-| `Enable All`  | Enables all `Enable` bits                                                                                                 |
-| `Open Key`    | Opens the registry key:<br>`HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}`<br>Includes a value named `DriverDesc` with data of `*NVIDIA*` |
-| `Clear`       | Reverts bit states to their default                                                                                      |
+| `Disable All` | Enables all `DISABLE*` / `OFF` / `FALSE` bits (fallback to `DEFAULT`)                                                    |
+| `Enable All`  | Enables all `ENABLE*` / `ON` / `TRUE` bits (fallback to `DEFAULT`)                                                       |
+| `Open Key`    | Opens the registry key within the display class GUID [`4d36e968-e325-11ce-bfc1-08002be10318`](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors#device-categories-and-class-values)<br> which includes a value named `DriverDesc` with data of `*NVIDIA*` |
+| `Auto Config` | Sets experimental values (grayed out, if there's no `Configured` value in the `.json` config)
+| `Clear`       | Reverts bit states to `*DEFAULT*` (first fallback to `EMPTY (0)`, second to any `0` value                                                                                      |
+
+> [!CAUTION]
+> `Auto Config` sets preconfigured **experimental** values, these aren't recommendations, only possible presumptions.
 
 ## Bitmask Calculation
 
