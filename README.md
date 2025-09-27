@@ -20,7 +20,7 @@ Preview:
 https://github.com/user-attachments/assets/91b241ef-5e8e-4859-8957-d3b54dc52b0e
 
 The tool currently has a selection of `967` values ([`nvvalues.txt`](https://github.com/5Noxi/bitmask-calc/blob/main/nvvalues.txt)). It works with my own `.json` converted bitfield definitions. This doesn't mean that all of them are configurable or used by your system. List of values, which got read on my system:
-> [NVIDIA Display Class GUID Record](https://github.com/5Noxi/wpr-reg-records/blob/main/NVIDIA-DispGUID.txt)
+> [NVIDIA Display Class GUID Record](https://github.com/5Noxi/wpr-reg-records/blob/main/records/NVIDIA-DispGUID.txt)
 
 The lower right panel shows the `.json` code of the selected value, I used the `Min Dark` theme as template for colors:
 > [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
