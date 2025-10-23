@@ -160,4 +160,4 @@ Bin: `00000101010000000000000000000000`
 4194304 -bor 16777216 -bor 67108864
 -> 88080384
 ```
-More info about `-shl` & `-bor` can be found in the [discord notes channel](https://discord.com/channels/836870260715028511/1361665557581140100/1362011218151215196).
+More info about `-shl` & `-bor` can be found in [bitwise-operators.md](https://github.com/5Noxi/bitmask-calc/blob/main/bitwise-operators.md).
