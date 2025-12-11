@@ -57,7 +57,7 @@ Here we'll have one byte instead of two, `0` will result in `1`, `1` results in 
 You could enter `-bnot -79` into powershell and get the output of `78`. `bnot(x)` flips all bits, which gives you the bitwise inverse of `x`. In two’s complement, this is the same as `- (x + 1)` because flipping bits is the first step in negating a number the second step is adding 1.
 MSB -> `0` positve; `1` negative
 
-![](https://github.com/5Noxi/bitmask-calc/blob/main/media/complement.png)
+![](https://github.com/nohuto/bitmask-calc/blob/main/media/complement.png)
 
 __Bitwise shift left operation (`-shl` = `x << y`):__
 Bitwise shift left operations would be used like: `x -shl x` -> x represents a number. The right number tells you the number of how many times the bits getting moved to the **left** of binary value from the left dec value.
@@ -110,7 +110,7 @@ If you're shifting e.g.:
 ```
 As you can see, if you're shifting the bits too much to the right the output will be `0`.
 
-![](https://github.com/5Noxi/bitmask-calc/blob/main/media/shift.png)
+![](https://github.com/nohuto/bitmask-calc/blob/main/media/shift.png)
 
 
 ## How can I use these operators?
@@ -148,4 +148,4 @@ $content = "&([char]105+[char]101+[char]120)(" + ($obf -join'+')+")"
 -> $content = "iex (" + ($obf -join'+')+")"
 ```
 I created it for testing reasons, you can use it to see the output of obfuscated content using a operator. The output isn't needed, if no output was given the command will be displayed in the console. This won't work for scripts with functions & it doesn't skip empty lines. See it as a demonstration of each bitwise operator using your code:
-- [NV-BitwiseOp.ps1](https://github.com/5Noxi/bitmask-calc/blob/main/bitwise-operators/NV-BitwiseOp.ps1) 
+- [NV-BitwiseOp.ps1](https://github.com/nohuto/bitmask-calc/blob/main/bitwise-operators/NV-BitwiseOp.ps1) 

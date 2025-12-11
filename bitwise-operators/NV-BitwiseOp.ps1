@@ -15,7 +15,7 @@
 $nv = "Authored by Noxi-Hu - (C) 2025 Noverse"
 sv -Scope Global -Name "erroractionpreference" -Value "stop"
 sv -Scope Global -Name "progresspreference" -Value "silentlycontinue"
-iwr 'https://github.com/5Noxi/5Noxi/releases/download/Logo/nvbanner.ps1' -o "$env:temp\nvbanner.ps1";. $env:temp\nvbanner.ps1
+iwr 'https://github.com/nohuto/nohuto/releases/download/Logo/nvbanner.ps1' -o "$env:temp\nvbanner.ps1";. $env:temp\nvbanner.ps1
 $host.UI.RawUI.BackgroundColor='Black'
 $host.UI.RawUI.WindowTitle='Noverse Bitwise Operation Examples'
 clear
