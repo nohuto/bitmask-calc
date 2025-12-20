@@ -26,15 +26,16 @@ The lower right panel shows the `.json` code of the selected value, I used the `
 > [min-dark.json | miguelsolorio](https://github.com/miguelsolorio/min-theme/blob/master/themes/min-dark.json)
 
 ## GUI Buttons
-| Button        | Description                                                                                                                |
-|---------------|----------------------------------------------------------------------------------------------------------------------------|
-| `Reg Add`     | Adds the currently selected value to the key                                                                             |
-| `Reg Del`     | Removes the currently selected value from the key                                                                        |
-| `Disable All` | Enables all `DISABLE*` / `OFF` / `FALSE` bits (fallback to `DEFAULT`)                                                    |
-| `Enable All`  | Enables all `ENABLE*` / `ON` / `TRUE` bits (fallback to `DEFAULT`)                                                       |
-| `Open Key`    | Opens the registry key within the display class GUID [`4d36e968-e325-11ce-bfc1-08002be10318`](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors#device-categories-and-class-values)<br> which includes a value named `DriverDesc` with data of `*NVIDIA*` |
-| `Auto Config` | Sets preconfigured **experimental** values, these aren't recommendations, only possible presumptions (grayed out, if there's no `Configured` value in the `.json` config)
-| `Clear`       | Reverts bit states to `*DEFAULT*` (first fallback to `EMPTY (0)`, second to any `0` value)                                                                                      |
+
+| Button | Description |
+| --- | --- |
+| `Reg Add` | Adds the currently selected value to the key |
+| `Reg Del` | Removes the currently selected value from the key |
+| `Disable All` | Enables all `DISABLE*` / `OFF` / `FALSE` bits (fallback to `DEFAULT`) |
+| `Enable All` | Enables all `ENABLE*` / `ON` / `TRUE` bits (fallback to `DEFAULT`) |
+| `Open Key` | Opens the registry key within the display class GUID [`4d36e968-e325-11ce-bfc1-08002be10318`](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors#device-categories-and-class-values)<br> which includes a value named `DriverDesc` with data of `*NVIDIA*` |
+| `Auto Config` | Sets preconfigured **experimental** values, these aren't recommendations, only possible presumptions (grayed out, if there's no `Configured` value in the `.json` config) |
+| `Clear` | Reverts bit states to `*DEFAULT*` (first fallback to `EMPTY (0)`, second to any `0` value) |
 
 ## Bitmask Calculation
 
