@@ -1,7 +1,8 @@
-# Bitmask Calculator - NVIDIA Values
+## NVIDIA Definitions got moved into [RegKits](https://github.com/nohuto/regkit) 'Bit Definition' Menu
 
-> [!NOTE]
-> Moved to [regkit](https://github.com/nohuto/regkit), into [bit definitions](https://github.com/nohuto/regkit/blob/main/assets/bitfields/NVIDIA.regkit-bitfield.json) menu
+Download the latest version of [regkit](https://github.com/nohuto/regkit/releases), then load [NVIDIA.regkit-bitfield.json](https://github.com/nohuto/regkit/blob/main/assets/bitfields/NVIDIA.regkit-bitfield.json) via `Tools > Bit Definitions`.
+
+# Bitmask Calculator
 
 This was meant to be a normal bitmask calculator, but I decided to add features to it that made it possible to directly configure and apply NVIDIA values. You may have seen people sharing NVIDIA values with uncommon looking data, e.g.:
 
